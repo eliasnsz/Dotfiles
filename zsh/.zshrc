@@ -10,6 +10,7 @@ source $ZSH/oh-my-zsh.sh
 # --------------------------
 # Zinit plugin manager
 # --------------------------
+export ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source "$HOME/.zsh/plugins/zinit/zinit.zsh"
 
 # Plugins
