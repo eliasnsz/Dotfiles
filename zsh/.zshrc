@@ -59,3 +59,5 @@ eval "$(pyenv init - zsh)"
 # Starship prompt
 # --------------------------
 eval "$(starship init zsh)"
+alias bootwin='sudo efibootmgr -n 0003 && sudo reboot'
+
