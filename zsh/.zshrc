@@ -61,3 +61,11 @@ eval "$(pyenv init - zsh)"
 eval "$(starship init zsh)"
 alias bootwin='sudo efibootmgr -n 0003 && sudo reboot'
 
+
+# pnpm
+export PNPM_HOME="/home/eliasnsz/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
